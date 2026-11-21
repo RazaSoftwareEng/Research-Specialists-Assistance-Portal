@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+@utility input {
+  @apply w-full rounded-lg border border-slate-300 bg-white px-3 py-2 text-sm outline-none focus:border-indigo-500 focus:ring-2 focus:ring-indigo-100;
+}
+@utility btn {
+  @apply inline-flex cursor-pointer items-center justify-center gap-2 rounded-lg px-4 py-2 text-sm font-medium transition disabled:cursor-not-allowed disabled:opacity-50;
+}
+@utility btn-primary { @apply btn bg-indigo-600 text-white hover:bg-indigo-700; }
+@utility btn-secondary { @apply btn border border-slate-300 bg-white text-slate-700 hover:bg-slate-100; }
+@utility btn-success { @apply btn bg-emerald-600 text-white hover:bg-emerald-700; }
+@utility btn-warning { @apply btn bg-amber-500 text-white hover:bg-amber-600; }
+@utility btn-danger { @apply btn bg-rose-600 text-white hover:bg-rose-700; }
+@utility card { @apply rounded-xl border border-slate-200 bg-white shadow-sm; }
+@utility label { @apply mb-1 block text-sm font-medium text-slate-700; }
+
+/* Word (.docx) preview */
+.docx-host .docx-wrapper { background: #f1f5f9; padding: 24px 12px; }
+.docx-host .docx-wrapper > section.docx { box-shadow: 0 2px 10px rgb(15 23 42 / 0.12); margin-bottom: 24px; max-width: 100%; }
